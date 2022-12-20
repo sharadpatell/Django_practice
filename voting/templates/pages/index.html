@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+   
+    body {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQX3FKpxqCWFR6lqp2uXTE-khmlXtz6Xxvw&usqp=CAU");
+        background-color: #cccccc;
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+</style>
+<body>
+    
+
+{% extends 'base.html' %}
+{% block content %}
+  
+<div class ="card text-center bg-warning">
+    <div class ="card-body">
+        <h2>Welcome To Voting</h2>
+          
+<h5>This is an  Polling App</h5>
+<h3>Created by Sharad Patel</h3>
+  
+        <a class ="btn btn-danger" href ="{% url 'polls:index' %}">
+            View Available Polls</a>
+            
+    </div>
+</div>
+
+{% endblock %}
+</body>
+</html>
+
